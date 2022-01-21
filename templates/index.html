@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+{% import 'bootstrap/wtf.html' as wtf %}
+<html>
+<head>
+    <title>Ali Firoozi | DevOps &amp; Back-end Developer
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta property="og:title" content="Ali Firoozi Zamani">
+    <meta name="author" content="Ali Firoozi Zamani">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Ali Firoozi Zamani">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link href="{{ url_for('static', filename='images/code-slash.svg') }}" rel="shortcut icon" type="image/png">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/header.css') }}">
+    <link href="{{ url_for('static', filename='styles/widget.css') }}" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <header class="d-flex justify-content-center py-3">
+        <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+            <ul class="nav nav-pills">
+                <li class="nav-item navbar-item"><a href="/" class="nav-link button is-primary is-outlined is-rounded">Home</a>
+                </li>
+                <li class="nav-item navbar-item"><a href="#skills" class="nav-link button is-primary is-outlined is-rounded">Skills</a>
+                </li>
+                <li class="nav-item navbar-item"><a href="#contact" class="nav-link button is-primary is-outlined is-rounded">Contact</a>
+                </li>
+                <li class="nav-item navbar-item"><a href="#about" class="nav-link button is-primary is-outlined is-rounded">About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</div>
+<section class="hero is-white has-text-centered">
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column">
+                    <h1 class="title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile"
+                        id="big-header"></h1>
+                    <h2 class="subtitle is-size-4-desktop">I love what I do.</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hero-foot">
+        <div class="container"><img class="is-bottom" src="{{ url_for('static', filename='images/hero.svg') }}"></div>
+    </div>
+</section>
+<section id="about" class="section is-medium is-primary has-text-centered is-long">
+    <div class="container">
+        <div class="columns is-centered">
+            <div class="column is-three-fifths">
+                <h1 class="title is-spaced is-size-3-desktop is-size-4-mobile">Hi, I’m Ali. Nice to meet you.</h1>
+                <h2 class="subtitle is-size-5-desktop">Since beginning my journey as a freelance designer nearly 10
+                    years ago, I've done remote work for agencies, consulted for startups, and collaborated with
+                    talented people to create digital products for both business and consumer use. I'm quietly
+                    confident, naturally curious, and perpetually working on improving my chops one design problem at a
+                    time.</h2>
+                <span>Download my <a style="color: aqua" href="https://docs.google.com/document/d/e/2PACX-1vTuBagAQkBkkzjAIQJldnQaWoujayIpdbObVA0U716EdpPg8lxGQ1H6PF4Uu_Xm7u4-qJ2nCMZ9dKJX/pub">Resume</a></span>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="skills" class="section skills has-text-centered">
+    <div class="container is-narrow">
+        <div class="box">
+            <div class="content">
+                <div class="columns is-centered">
+                    <div class="column">
+                        <figure class="image"><img class="is-skill-icon"
+                                                   src="{{ url_for('static', filename='images/designer.svg') }}">
+                        </figure>
+                        <h1 class="title is-size-4 is-spaced">DevOps</h1>
+                        <p>I love DevOps world most!</p>
+                        <p class="list-title has-text-primary has-text-weight-normal">Things I enjoy working:</p>
+                        <p>Docker & Containers, Orchestration with Kubernetes</p>
+                        <p class="list-title has-text-primary has-text-weight-normal">Skills</p>
+                        <ul>
+                            <li>Skills</li>
+                            <li>Docker & Containers</li>
+                            <li>Kubernetes & Swarm</li>
+                            <li>Artifact RepoManager (Nexus)</li>
+                            <li>Automation & CI/CD (Jenkins)</li>
+                            <li>Cloud and Iaas (DigitalOcean)</li>
+                            <li>AWS Services</li>
+                            <li>Kubernetes on AWS - EKS</li>
+                            <li>IaC with Terraform</li>
+                            <li>Configuration manager with Ansible</li>
+                            <li>Monitoring with Prometheus</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <figure class="image"><img class="is-skill-icon"
+                                                   src="{{ url_for('static', filename='images/frontend.svg') }}">
+                        </figure>
+                        <h1 class="title is-size-4 is-spaced">Back-end Developer</h1>
+                        <p>I love Python and I do almost everything with it</p>
+                        <p class="list-title has-text-primary has-text-weight-normal">Languages I speak:</p>
+                        <p>Python, HTML, CSS</p>
+                        <p class="list-title has-text-primary has-text-weight-normal">Skills</p>
+                        <ul>
+                            <li>Full-Stack python Developer</li>
+                            <li>Postgresql</li>
+                            <li>MongoDB</li>
+                            <li>Node-JS</li>
+                            <li>EJS</li>
+                            <li>Rest-ful API</li>
+                            <li>Unix Terminal</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <figure class="image"><img class="is-skill-icon"
+                                                   src="{{ url_for('static', filename='images/mentor.svg') }}"></figure>
+                        <h1 class="title is-size-4 is-spaced">Fundamentals</h1>
+                        <p>Fundamental skills that i use them in my journey</p>
+                        <p class="list-title has-text-primary has-text-weight-normal">Things i love</p>
+                        <p>Linux, Network, Unix Terminals</p>
+                        <p class="list-title has-text-primary has-text-weight-normal">Skills</p>
+                        <ul>
+                            <li>CompTIA Network+</li>
+                            <li>CompTIA Security+</li>
+                            <li>Linux & Unix Terminals</li>
+                            <li>Git & Version Control</li>
+                            <li>Gillab & Github</li>
+                            <li>Package managers (npm-pip)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="contact" class="section projects is-medium is-white has-text-centered">
+    <div class="container is-narrow">
+        <h1 class="title is-spaced is-size-3-desktop is-size-4-mobile">Get in touch</h1>
+        <h2 class="subtitle is-size-5-desktop">Leave a message and i respond it ASAP</h2>
+        <span>I need your email to get in touch with you!</span>
+        <div class="project-grid">
+            <div class="columns is-multiline is-mobile">
+                <div class="column is-12-mobile">
+                    {{ ckeditor.load() }}
+                    {{ ckeditor.config(name='content') }}
+                    {{ wtf.quick_form(form, novalidate=True, button_map={"submit": "info"}) }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer class="section is-primary is-small has-text-centered">
+    <div class="columns is-centered">
+        <div class="column is-one-third">
+            <h1 class="title is-size-4-touch">Living, learning, & Coding.</h1>
+        </div>
+    </div>
+    <div class="social-icons">
+        <p class="field"><a class="button is-medium" href="mailto:alifiroozizamani@gmail.com" target="_blank"><span
+                class="icon is-small"><i class="bi bi-envelope"></i></span></a><a class="button is-medium"
+                                                                                  href="https://github.com/alifiroozi80"
+                                                                                  target="_blank"><span
+                class="icon is-small"><i class="bi bi-github"></i></span></a></p>
+    </div>
+    <div class="copyright">Handcrafted by me<span class="icon has-white-text" style="vertical-align:middle;">©</span>{{ year }}</div>
+    </div>
+</footer>
+</body>
+<script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/index.js') }}"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</html>
