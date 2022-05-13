@@ -103,6 +103,7 @@ ipython_config.py
 # IDE and Mac files
 .DS_Store
 venv
+.idea
 
 # PEP 582; used by e.g. github.com/David-OConnor/pyflow
 __pypackages__/
