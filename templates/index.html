@@ -2,7 +2,7 @@
 {% import 'bootstrap/wtf.html' as wtf %}
 <html>
 <head>
-    <title>Ali Firoozi | DevOps &amp; Back-end Developer
+    <title>Ali Firoozi | DevOps Engineer
     </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,11 +26,14 @@
             <ul class="nav nav-pills">
                 <li class="nav-item navbar-item"><a href="/" class="nav-link button is-primary is-outlined is-rounded">Home</a>
                 </li>
-                <li class="nav-item navbar-item"><a href="#skills" class="nav-link button is-primary is-outlined is-rounded">Skills</a>
+                <li class="nav-item navbar-item"><a href="#skills"
+                                                    class="nav-link button is-primary is-outlined is-rounded">Skills</a>
                 </li>
-                <li class="nav-item navbar-item"><a href="#contact" class="nav-link button is-primary is-outlined is-rounded">Contact</a>
+                <li class="nav-item navbar-item"><a href="#contact"
+                                                    class="nav-link button is-primary is-outlined is-rounded">Contact</a>
                 </li>
-                <li class="nav-item navbar-item"><a href="#about" class="nav-link button is-primary is-outlined is-rounded">About</a>
+                <li class="nav-item navbar-item"><a href="#about"
+                                                    class="nav-link button is-primary is-outlined is-rounded">About</a>
                 </li>
             </ul>
         </nav>
@@ -58,12 +61,11 @@
             <div class="column is-three-fifths">
                 <h1 class="title is-spaced is-size-3-desktop is-size-4-mobile">Hi, I’m Ali. Nice to meet you.</h1>
                 <h2 class="subtitle is-size-5-desktop">
-                    Since beginning my journey as a developer nearly {{ year | int - 2021 }}
-                    years ago, I've had a lot of fun and i love my journey...
-                    I love learning and fun ideas! So if you have a cool idea, be sure to reach me
-                    out in below form...
+                    Since beginning my journey as a DevOps Engineer, nearly {{ year | int - 2021 }}
+                    years ago, I had a lot of fun, and I love my journey
+                    I love learning and fun ideas! So if you have a fantastic idea, reach out below form.
                 </h2>
-                <span>Download my <a style="color: aqua" href="https://docs.google.com/document/d/e/2PACX-1vTuBagAQkBkkzjAIQJldnQaWoujayIpdbObVA0U716EdpPg8lxGQ1H6PF4Uu_Xm7u4-qJ2nCMZ9dKJX/pub">Resume</a></span>
+                <span>Download my complete <a style="color: aqua" href="{{ url_for('download') }}">Resume</a></span>
             </div>
         </div>
     </div>
@@ -75,67 +77,67 @@
                 <div class="columns is-centered">
                     <div class="column">
                         <figure class="image"><img class="is-skill-icon"
-                                                   src="{{ url_for('static', filename='images/designer.svg') }}">
+                                                   src="{{ url_for('static', filename='images/mentor.svg') }}">
                         </figure>
-                        <h1 class="title is-size-4 is-spaced">DevOps</h1>
-                        <p>I love DevOps world most!</p>
-                        <p class="list-title has-text-primary has-text-weight-normal">Things I enjoy working:</p>
-                        <p>Docker & Containers, Orchestration with Kubernetes</p>
-                        <p class="list-title has-text-primary has-text-weight-normal">Skills</p>
+                        <h1 class="title is-size-5 is-spaced">System Administration</h1>
                         <ul>
-                            <li>Docker & Containers</li>
-                            <li>Kubernetes & Swarm</li>
-                            <li>Artifact RepoManager (Nexus)</li>
-                            <li>Automation & CI/CD (Jenkins)</li>
-                            <li>Cloud and IaaS (AWS, DigitalOcean, Linode)</li>
-                            <li>AWS Services</li>
-                            <li>Kubernetes on Clouds</li>
-                            <li>IaC with Terraform</li>
-                            <li>Configuration manager with Ansible</li>
+                            <li>RedHat, Ubuntu, CentOS, Fedora</li>
+                            <li>Bash Shell</li>
+                            <li>Ansible</li>
+                            <li>Python</li>
                             <li>Monitoring with Prometheus</li>
+                            <li>Regular Expression</li>
+                            <li>Vim Editor</li>
                             <li>Vagrant</li>
-                            <li>Snyk</li>
                         </ul>
                     </div>
                     <div class="column">
                         <figure class="image"><img class="is-skill-icon"
-                                                   src="{{ url_for('static', filename='images/frontend.svg') }}">
+                                                   src="{{ url_for('static', filename='images/mentor.svg') }}">
                         </figure>
-                        <h1 class="title is-size-4 is-spaced">Back-end Developer</h1>
-                        <p>I love Python and I do almost everything with it</p>
-                        <p class="list-title has-text-primary has-text-weight-normal">Languages I speak:</p>
-                        <p>Python, HTML, CSS</p>
-                        <p class="list-title has-text-primary has-text-weight-normal">Skills</p>
+                        <h1 class="title is-size-5 is-spaced">Containerization</h1>
                         <ul>
-                            <li>Full-Stack Python Developer</li>
-                            <li>Postgresql</li>
-                            <li>MongoDB</li>
-                            <li>Atlas Cload Database</li>
-                            <li>Node-JS</li>
-                            <li>EJS</li>
-                            <li>Restful API</li>
-                            <li>Unix Terminal</li>
-                            <li>Snyk</li>
+                            <li>Docker</li>
+                            <li>Kubernetes</li>
+                            <li>Docker Swarm</li>
+                            <li>AWS EKS</li>
+                            <li>AWS ECS, Linode LKE</li>
+                            <li>Linode LKE</li>
+                            <li>AWS ECR</li>
+                            <li>Nexus</li>
                         </ul>
                     </div>
                     <div class="column">
                         <figure class="image"><img class="is-skill-icon"
-                                                   src="{{ url_for('static', filename='images/mentor.svg') }}"></figure>
-                        <h1 class="title is-size-4 is-spaced">Fundamentals</h1>
-                        <p>Fundamental skills that i use them in my journey</p>
-                        <p class="list-title has-text-primary has-text-weight-normal">Things i love</p>
-                        <p>Linux, Network, Unix Terminals</p>
-                        <p class="list-title has-text-primary has-text-weight-normal">Skills</p>
+                                                   src="{{ url_for('static', filename='images/mentor.svg') }}">
+                        </figure>
+                        <h1 class="title is-size-5 is-spaced">Cloud Infrastructure</h1>
                         <ul>
-                            <li>CompTIA Network+</li>
-                            <li>CompTIA Security+</li>
-                            <li>Linux & Unix Terminals</li>
-                            <li>Git & Version Control</li>
-			                <li>Regular Expression</li>
-			                <li>Shell Scripting</li>
-			                <li>Github & Gitlab</li>
-			                <li>Vim Editor</li>
-                            <li>Package managers</li>
+                            <li>AWS (IaaS, PaaS SaaS, CLI/API, VPS)</li>
+                            <li>Linode (IaaS, PaaS SaaS, CLI/API)</li>
+                            <li>Azure DevOps</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <figure class="image"><img class="is-skill-icon"
+                                                   src="{{ url_for('static', filename='images/mentor.svg') }}">
+                        </figure>
+                        <h1 class="title is-size-5 is-spaced">X as Code</h1>
+                        <ul>
+                            <li>Terraform</li>
+                            <li>Pulumi</li>
+                            <li>Ansible</li>
+                            <li>Python</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <figure class="image"><img class="is-skill-icon"
+                                                   src="{{ url_for('static', filename='images/mentor.svg') }}">
+                        </figure>
+                        <h1 class="title is-size-5 is-spaced">CI/CD Processes</h1>
+                        <ul>
+                            <li>Jenkins</li>
+                            <li>Gitlab CI/CD</li>
                         </ul>
                     </div>
                 </div>
@@ -148,7 +150,7 @@
 <section id="contact" class="section projects is-medium is-white has-text-centered">
     <div class="container is-narrow">
         <h1 class="title is-spaced is-size-3-desktop is-size-4-mobile">Get in touch</h1>
-        <h2 class="subtitle is-size-5-desktop">Leave a message and i respond to it ASAP</h2>
+        <h2 class="subtitle is-size-5-desktop">Leave a message, and I will respond to it ASAP.</h2>
         <span>I need your email to get in touch with you!</span>
         <div class="project-grid">
             <div class="columns is-multiline is-mobile">
@@ -170,13 +172,27 @@
         </div>
     </div>
     <div class="social-icons">
-        <p class="field"><a class="button is-medium" href="mailto:alifiroozizamani@gmail.com" target="_blank"><span
-                class="icon is-small"><i class="bi bi-envelope"></i></span></a><a class="button is-medium"
-                                                                                  href="https://github.com/alifiroozi80"
-                                                                                  target="_blank"><span
-                class="icon is-small"><i class="bi bi-github"></i></span></a></p>
+        <p class="field">
+            <a class="button is-medium" href="mailto:alifiroozizamani@gmail.com" target="_blank">
+                <span
+                        class="icon is-small">
+                        <i class="bi bi-envelope"></i>
+                </span>
+            </a>
+            <a class="button is-medium" href="https://github.com/alifiroozi80" target="_blank">
+                <span
+                        class="icon is-small"><i class="bi bi-github"></i>
+                </span>
+            </a>
+            <a class="button is-medium" href="https://www.linkedin.com/in/Ali-Firoozi-Zamani" target="_blank">
+                <span
+                        class="icon is-small"><i class="bi bi-linkedin"></i>
+                </span>
+            </a>
+        </p>
     </div>
-    <div class="copyright">Handcrafted by me<span class="icon has-white-text" style="vertical-align:middle;">©</span>{{ year }}</div>
+    <div class="copyright">Handcrafted by me<span class="icon has-white-text"
+                                                  style="vertical-align:middle;">©</span>{{ year }}</div>
     </div>
 </footer>
 </body>

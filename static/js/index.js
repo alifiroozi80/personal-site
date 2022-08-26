@@ -1,5 +1,5 @@
 var i = 0;
-var txt = "I'm Ali, A DevOps engineer & Back-end Developer";
+var txt = "I'm Ali, A Happy DevOps engineer :)";
 var speed = 70;
 $(document).ready(typeWriter());
 
